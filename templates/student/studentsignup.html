@@ -18,52 +18,53 @@
 
 
 <br><br><br>
-<h3 style="text-align: center;color: red;">STUDENT SIGNUP</h3>
+<h3 style="text-align: center;color: rgb(132, 0, 255); font-family: sans-serif; font-weight: 600;">STUDENT SIGNUP</h3>
 <form method="POST" autocomplete="off" enctype="multipart/form-data">
     {% csrf_token %}
     <div class="form-row">
       <div class="form-group col-md-6">
-        <label for="username">Username</label>
+        <label for="username" style="font-weight: 600; font-family: sans-serif;">Username</label>
         {% render_field userForm.username|attr:'required:true'  class="form-control" placeholder="username" %}
       </div>
       <div class="form-group col-md-6">
-        <label for="inputPassword4">Password</label>
+        <label for="inputPassword4" style="font-weight: 600; font-family: sans-serif;">Password</label>
         {% render_field userForm.password|attr:'required:true'  class="form-control" placeholder="password" %}
       </div>
     </div>
 
     <div class="form-row">
         <div class="form-group col-md-6">
-          <label for="first_name">First Name</label>
+          <label for="first_name" style="font-weight: 600; font-family: sans-serif;">First Name</label>
           {% render_field userForm.first_name|attr:'required:true'  class="form-control" placeholder="First Name" %}
         </div>
         <div class="form-group col-md-6">
-          <label for="last_name">Last Name</label>
+          <label for="last_name" style="font-weight: 600; font-family: sans-serif;">Last Name</label>
           {% render_field userForm.last_name|attr:'required:true'  class="form-control" placeholder="Last Name" %}
         </div>
       </div>
 
       <div class="form-row">
         <div class="form-group col-md-6">
-          <label for="mobile">Mobile</label>
+          <label for="mobile" style="font-weight: 600; font-family: sans-serif;">Mobile</label>
           {% render_field studentForm.mobile|attr:'required:true'  class="form-control" placeholder="Mobile" %}
         </div>
         <div class="form-group col-md-6">
-          <label for="address">Address</label>
+          <label for="address" style="font-weight: 600; font-family: sans-serif;">Address</label>
           {% render_field studentForm.address|attr:'required:true'  class="form-control" placeholder="Address" %}
         </div>
       </div>
 
       <div class="form-row">
         <div class="form-group col-md-12">
-          <label for="profile_pic">Profile Picture</label>
+          <label for="profile_pic" style="font-weight: 600; font-family: sans-serif;">Profile Picture</label>
           {% render_field studentForm.profile_pic|attr:'required:true' class="form-control" placeholder="" %}
         </div>
         
-      </div>
+      </div> 
 
-
-    <button type="submit" class="btn btn-primary">Sign Up</button>
+      <div style="color: rgb(132, 0, 255); ">
+    <button type="submit" class="btn btn-primary " style="border-radius:  10px; font-weight:bold;width: 18%; margin-top: 10px; margin-left: 40%; font-family: sans-serif; background-color:  rgb(132, 0, 255); border-color: rgb(132, 0, 255);">Sign Up</button>
+  </div>
   </form>
 
 
